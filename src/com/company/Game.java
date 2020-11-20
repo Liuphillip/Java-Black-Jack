@@ -176,7 +176,7 @@ public class Game {
             }
             if(playerHandValue==21){
                 System.out.println("You Win!");
-                bank += betAmount*1.5;
+                bank += betAmount*2.5;
                 continue;
             }
 
@@ -209,11 +209,11 @@ public class Game {
             System.out.println(" ");
             if(dealerHandValue>21 && playerHandValue < 21){
                 System.out.println("You Win!");
-                bank += betAmount *1.5;
+                bank += betAmount *2;
             }
-            if(dealerHandValue<playerHandValue){
+            if(dealerHandValue<playerHandValue&&playerHandValue<21){
                 System.out.println("You Win!");
-                bank += betAmount *1.5;
+                bank += betAmount *2;
             }
             if(dealerHandValue==playerHandValue){
                 System.out.println("Tie");
