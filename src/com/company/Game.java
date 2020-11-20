@@ -207,11 +207,11 @@ public class Game {
             }
             //EVALUATE
             System.out.println(" ");
-            if(dealerHandValue>21 && playerHandValue < 21){
+            if(dealerHandValue>21 && playerHandValue <= 21){
                 System.out.println("You Win!");
                 bank += betAmount *2;
             }
-            if(dealerHandValue<playerHandValue&&playerHandValue<21){
+            if(dealerHandValue<playerHandValue&&playerHandValue<=21){
                 System.out.println("You Win!");
                 bank += betAmount *2;
             }
@@ -219,7 +219,7 @@ public class Game {
                 System.out.println("Tie");
                 bank += betAmount;
             }
-            if((playerHandValue<dealerHandValue) && (dealerHandValue<21)){
+            if((playerHandValue<dealerHandValue) && (dealerHandValue<=21)){
                 System.out.println("You Loose");
                 //placebet() already takes away bet amount
             }
