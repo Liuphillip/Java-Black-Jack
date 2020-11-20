@@ -223,7 +223,7 @@ public class Game {
                 System.out.println("You Loose");
                 //placebet() already takes away bet amount
             }
-
+            deck.resetDeck();
             setPlayerHandValue(0);
             setDealerHandValue(0);
             setPlayerHandCount(2);
